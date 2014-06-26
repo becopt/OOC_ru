@@ -1,1 +1,49 @@
-$  Перевод книги
+% Перевод книги Object-oriented Programming with ANSI-C
+% Логинов Валентин tr9pka@gmail.com
+
+\documentclass[a4paper,12pt]{book}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}            % после заголовков ставится абзацный отступ
+\usepackage{geometry}               % Для полей страниц
+\usepackage{titlesec}               % Для заголовков
+\usepackage{graphicx}               % Для работы с рисунками
+\usepackage{underscore}             % Для подчеркиваний
+\usepackage{caption}                % Для подписей к фигурам
+\usepackage{hyperref}               % Гиперссылки для классных прыжков по доке
+
+% Путь к рисункам
+\graphicspath{{img/}}
+
+% Настройки ссылок
+\hypersetup{
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+% Заголовок
+\author{Аксель-Тобиас Шрайнер}
+\title{Объектно-ориентированное программирование на ANSI-C}
+\date{1993 г.}
+
+% Конец прембулы. Начало документа.
+\begin{document}
+
+% Не нумерованные разделы
+\frontmatter
+% Титульный лист
+\maketitle
+% Оглавление
+\tableofcontents
+
+% 0. Предисловие
+\input{./Chapters/0_Preface.tex}
+
+\end{document}

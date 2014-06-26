@@ -1,0 +1,105 @@
+% Предисловие
+
+\documentclass[a4paper,12pt]{book}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{indentfirst}            % после заголовков ставится абзацный отступ
+\usepackage{titlesec}               % Для заголовков
+\usepackage{graphicx}               % Для работы с рисунками
+\usepackage{underscore}             % Для подчеркиваний
+\usepackage{caption}                % Для подписей к фигурам
+% Выравнивание заголовка по правому краю
+\usepackage{sectsty}
+% Использование цвета
+\usepackage{xcolor}
+% Комментирование блока
+\usepackage{comment}
+
+\begin{document}
+
+\frontmatter
+
+\chapterfont{\raggedleft}
+% Preface
+\chapter{Предисловие}
+
+{
+\begin{comment}
+No programming technique solves all problems.
+No programming language produces only correct results.
+No programmer should start each project from scratch.
+\end{comment}
+
+\raggedleft
+Ни одна техника программирования не решит все проблемы.\\
+Ни один язык программирования не даст только верные результаты.\\
+Ни один программист не должен начинать каждый проект с нуля.\\
+}
+\bigskip
+{
+\begin{comment}
+Object-oriented programming is the current cure-all — although it has been
+around for much more then ten years. At the core, there is little more to it then
+finally applying the good programming principles which we have been taught for
+more then twenty years. C++ (Eiffel, Oberon-2, Smalltalk ... take your pick) is the
+New Language because it is object-oriented — although you need not use it that
+way if you do not want to (or know how to), and it turns out that you can do just as
+well with plain ANSI-C. Only object-orientation permits code reuse between projects
+— although the idea of subroutines is as old as computers and good programmers
+always carried their toolkits and libraries with them.
+\end{comment}
+Объектно-ориентированное программирование - совеременная панацея несмотря на то, 
+что о нём известно уже больше десяти лет. По сути, это нечто большее, чем 
+применение хороших принципов программирования, которым нас учили 
+на протяжении двух десятилетий. \mbox{C++} (\mbox{Eiffel,} \mbox{Oberon-2,} \mbox{Smalltalk} ... впишите свой вариант) - это 
+Новый Язык, потому что он --- объектно-ориентированный, хоть и нет необходимости применять его таким 
+образом, если вы не хотите (или не знаете как), и, оказывается, это также относится к чистому ANSI-C. Только объектно-ориентированный подход позволяет обеспечить повторное использование кода в между проектами, 
+хоть и идея подпрограмм стара как компьютеры и хорошие программисты 
+всегда имеют свои инструменты и библиотеки под рукой.
+}
+
+{
+\begin{comment}
+This book is not going to praise object-oriented programming or condemn the
+Old Way. We are simply going to use ANSI-C to discover how object-oriented programming
+is done, what its techniques are, why they help us solve bigger problems,
+and how we harness generality and program to catch mistakes earlier. Along
+the way we encounter all the jargon — classes, inheritance, instances, linkage,
+methods, objects, polymorphisms, and more — but we take it out of the realm of
+magic and see how it translates into the things we have known and done all along.
+\end{comment}
+В этой книге не будет восхваления объектно-ориентированного программирования или же порицания 
+Старого Способа. Мы только будем использовать ANSI-C, чтобы узнать как применяется объектно-ориентированное программирование, 
+каковы его техники, почему они помогают решать большие задачи, 
+и как сопрягаем обобщения и программы, чтобы заранее обнаружить ошибки. В 
+книге мы столкнемся с жаргоном --- классы, наследование, экземпляр, компоновка, 
+методы, объекты, полиморфизм и прочее --- но мы возьмём эти слова из мира 
+магии и увидим как они превращаются в вещи, которые мы знаем и постоянно используем.
+}
+
+{
+\begin{comment}
+I had fun discovering that ANSI-C is a full-scale object-oriented language. To
+share this fun you need to be reasonably fluent in ANSI-C to begin with — feeling
+comfortable with structures, pointers, prototypes, and function pointers is a must.
+Working through the book you will encounter all the newspeak — according to
+Orwell and Webster a language ‘‘designed to diminish the range of thought’’ — and
+I will try to demonstrate how it merely combines all the good programming principles
+that you always wanted to employ into a coherent approach. As a result, you
+may well become a more proficient ANSI-C programmer.
+\end{comment}
+Я получал удовольствие, раскрывая ANSI-C как полномасштабный объектно-ориентированный язык. Чтобы
+разделить со мной это чувство, прежде всего, вам нужно быть достаточно подкованными в ANSI-C -
+вы должны свободно работать со структурами, указателями, прототипами и указателями на функции. 
+Прорабатывая книгу вы столкнётесь с новоязом --- согласно 
+Оруэллу и Вебстер --- языку, ,,предельно сужающему возможность выразить что-либо``, и 
+я постараюсь продемонстрировать как просто это сочетается со всеми практиками хорошего программирования,
+которые вы всегда хотели применить в последовательном подходе. В результате вы
+вполне можете стать более искусным программистом на ANSI-C.
+}
+
+\end{document}
